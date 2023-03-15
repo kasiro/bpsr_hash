@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
 require 'my_hash.php';
 
 $login = 'kon.konikov@mail.ru';
