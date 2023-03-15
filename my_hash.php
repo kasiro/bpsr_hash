@@ -1,6 +1,6 @@
 <?php
 
-require '/home/kasiro/Документы/projects/testphp/user_modules/Sh.php';
+require './jhp_modules/Sh.php';
 
 function password_generate(string $string, int $i = 5) {
     CODER_caesar::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
