@@ -3,11 +3,11 @@
 require './jhp_modules/Sh.php';
 
 function password_generate(string $string, int $i = 5) {
-    CODER_caesar::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    // CODER_caesar::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $be = base64_encode($string);
     $m = strlen($be) - $i;
     $be = substr($be, 0, -($m));
-    return CODER_caesar::caesarEncode($be, $i);
+    return $be;
 }
 
 function bpsr_wrapper(string $string, int $cost = 0) {
