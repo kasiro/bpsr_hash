@@ -4,14 +4,14 @@ require 'vendor/autoload.php';
 require 'my_hash.php';
 require './jhp_modules/uid_generator.php';
 
-$login = '89137759910';
-$pass = 'truerealyexp';
-$site = 'vk.com';
-$sym = '|';
+// $login = '89137759910';
+// $pass = 'truerealyexp';
+// $site = 'vk.com';
+// $sym = '|';
 
 uid_generator::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-// srand();
+srand();
 $res = uid_generator::uid_generate('xxxx-xxxx-xxxx-xxxx', 'x');
 // $ps_test = $login.$sym.$site.$sym.$pass;
 // $ps = $login.$sym.$site.$sym.$pass;
