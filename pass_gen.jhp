@@ -1,0 +1,18 @@
+<?php
+
+require 'vendor/autoload.php';
+require 'my_hash.php';
+
+$login = 'kasiro';
+$pass = '45105!45105!';
+$site = 'habr.com';
+$sym = '|';
+
+// $ps_test = $login.$sym.$site.$sym.$pass;
+$ps = $login.$sym.$site.$sym.$pass;
+nl $ps;
+
+$ps_hash = bpsr_wrapper($ps);
+nl $ps_hash;
+nl password_generate($ps, 12);
+dump(bpsr_verify($ps, $ps_hash));
