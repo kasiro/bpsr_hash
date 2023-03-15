@@ -3,6 +3,7 @@
 require 'vendor/autoload.php';
 require 'my_hash.php';
 require './jhp_modules/uid_generator.php';
+require './jhp_modules/Colors.php';
 uid_generator::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 $hash = trim(file_get_contents('bpsr.hash'));
@@ -14,5 +15,5 @@ for ($i = 1; $i <= 999999999999999; $i++) {
     if ($h == $hash) {
         dd($res);
     }
-    echo $res . ' (' . $h . ')'. ' (' . $i . ')' . PHP_EOL;
+    echo Colors::setColor($res . ' (' . number_format($i, 0, ' ', ' ') . ')', 'red') . PHP_EOL;
 }
