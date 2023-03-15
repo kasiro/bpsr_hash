@@ -14,5 +14,5 @@ echo $ps . PHP_EOL;
 
 // $ps_hash = bpsr_wrapper($ps);
 // echo $ps_hash . PHP_EOL;
-echo password_generate($ps, 10) . PHP_EOL;
+echo $site.': '.password_generate(strlen($ps)) . PHP_EOL;
 // dump(bpsr_verify($ps, $ps_hash));
