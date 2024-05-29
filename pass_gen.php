@@ -4,10 +4,6 @@ require 'vendor/autoload.php';
 require 'my_hash.php';
 require './jhp_modules/uid_generator.php';
 
-// $login = '89137759910';
-// $pass = 'truerealyexp';
-// $site = 'vk.com';
-// $sym = '|';
 
 uid_generator::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
