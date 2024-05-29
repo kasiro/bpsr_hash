@@ -4,7 +4,6 @@ require 'vendor/autoload.php';
 require 'my_hash.php';
 require './jhp_modules/uid_generator.php';
 
-
 uid_generator::$abc = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 srand();
